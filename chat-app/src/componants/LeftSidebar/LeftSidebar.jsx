@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./LeftSidebar.css";
+import { logout } from "../../config/firebase.js";
 import assets from "../../assets/assets.js";
 import { useNavigate } from "react-router-dom";
 import {
@@ -152,7 +153,7 @@ const LeftSidebar = () => {
             <div className="sub-menu">
               <p onClick={() => navigate("/profile")}>Edit Profile</p>
               <hr />
-              <p>Logout</p>
+              <p ()=>logout() >Logout</p>
             </div>
           </div>
         </div>
